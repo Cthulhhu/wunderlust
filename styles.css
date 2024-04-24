@@ -26,6 +26,87 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browserss */
+@media (min-width:500px){
+    #img-grid,#plan div,#testimonials div{
+        grid-template-columns: 1fr 1fr; 
+        display: grid
+    }
+    #about div,#img-grid,#selects,nav ul{
+        display: grid;
+    }
+    header h1,header p{
+        margin-left: 7rem;
+    }
+    header h1{
+        padding-top: 2rem;
+    }
+    label[for=toggle]{
+        display: none;
+    }
+    #menu-toggle{
+        position: relative;
+        top: 0;
+    }
+    nav{
+        padding-bottom: 2rem;
+    }
+    nav ul{
+        transform: scaleY(1);
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px;
+        padding: 0 3rem;
+    }
+    nav a
+    {
+        font-size:.8rem;
+    }
+    nav li{
+        background: var(--white);
+        text-align: center;
+        padding: .5rem 0;
+    }
+    nav li:not(:last-child){
+        border-bottom: 0;
+    }
+    #logo{
+        position: absolute;
+        top: 1.5rem;
+    }
+    .active{
+        background:var(--yellow);
+    }
+    #intro h2,#intro p{
+        padding: 0;
+    }
+    #about,#contact,#intro,#plan,#testimonials{
+        padding: 1rem 3rem;
+    }
+    #img-grid{
+        grid-gap: 1rem;
+    }
+    picture{
+        grid-column: span 2;
+    }
+    #plan div,#testimonials div{
+        grid-gap: 2rem;
+    }
+    #about div{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #about section{
+        width: 100%;
+    }
+    fieldset{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    input[type=submit]{
+        width: 40%;
+        justify-self: end;
+    }
+    footer{
+            flex-direction: row;
+        }
+    }
 
 @media (min-width:1200px){
     #about,#contact,#intro,#plan,#testimonials{
@@ -38,7 +119,9 @@ time, mark, audio, video {
         display: grid;
     }
     #about div,#intro,form{
-        gap: 2rem; max-width: 1920px; margin: 0 auto;
+        gap: 2rem; 
+        max-width: 1920px; 
+        margin: 0 auto;
     }
     #about div,#about h3,#contact h3,#intro,#plan h3,#testimonials h3,form{
         max-width: 1920px;
@@ -47,7 +130,9 @@ time, mark, audio, video {
         margin: 0 auto;
     }
     nav{
-        position:absolute; top: 0; right: 0;
+        position:absolute; 
+        top: 0; 
+        right: 0;
     }
     nav li{
         padding: 1rem;
@@ -65,42 +150,54 @@ time, mark, audio, video {
         grid-template-columns: 1fr 1fr;
     }
     #intro h2{
-        grid-column: 1/2; grid-row: 1/-1;
+        grid-column: 1/2; 
+        grid-row: 1/-1;
     }
     #intro p{
-        grid-column: 1/2; grid-row: 2/-1; margin-top: 3rem;
+        grid-column: 1/2; 
+        grid-row: 2/-1; 
+        margin-top: 3rem;
     }
     #img-grid{
-        grid-row: 1/-1; grid-column: 2/-1;
+        grid-row: 1/-1; 
+        grid-column: 2/-1;
     }
     #plan div,#testimonials div{
-        grid-template-columns: 1fr 1fr 1fr 1fr; max-width: 1920px; margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        max-width: 1920px; 
+        margin: 0 auto;
     }
     #plan section{
-        display: grid; justify-content: center;
+        display: grid; 
+        justify-content: center;
     }
     #about div{
-        width: fit-content; grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: fit-content; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     #about h3{
         width: 100%;
     }
     #about img{
-        height: 120px; margin-bottom: 1rem;
+        height: 120px; 
+        margin-bottom: 1rem;
     }
     #contact h3{
         width: 100%;
     }
     form{
-        grid-template-columns: 1fr 1fr 1fr; align-items: start;
+        grid-template-columns: 1fr 1fr 1fr; 
+        align-items: start;
     }
     .form-required{
         font-size: 1.5rem;
     }
     footer{
-        padding: 3rem 14rem; gap: 3rem;
+        padding: 3rem 14rem; 
+        gap: 3rem;
     }
     footer p{
-        flex: 1; text-align: left;
+        flex: 1; 
+        text-align: left;
     }
 }
