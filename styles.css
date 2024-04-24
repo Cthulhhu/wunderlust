@@ -26,10 +26,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browserss */
+
+
 @media (min-width:500px){
     #img-grid,#plan div,#testimonials div{
         grid-template-columns: 1fr 1fr; 
-        display: grid
+        display: grid;
     }
     #about div,#img-grid,#selects,nav ul{
         display: grid;
