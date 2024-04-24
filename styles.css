@@ -26,6 +26,170 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browserss */
+#logo,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,nav label,section{
+    display: block;
+}
+
+#logo,nav li{
+    padding: .5rem 0;
+}
+
+#plan,nav label{
+    background: var(--yellow);
+}
+
+#plan section,#skip,nav li{
+    background: var(--teal);
+}
+
+#plan section,h4,nav a,nav label{
+    text-transform:uppercase;
+}
+
+#names,#nums,#plan div,#testimonials div,fieldset{
+    grid-template-columns: 1fr;
+    display: grid;
+}
+
+#about,#contact,#plan,#testimonials{
+    padding: 1.5rem 1.8rem;
+}
+
+.required,input[type=radio]{
+    color: var(--purple);
+}
+
+input,select{
+    padding: .7rem .3rem;
+    margin-bottom: 10px;
+}
+
+img,select{
+    width: 100%;
+}
+#about section,#plan section,footer,nav label,nav li,q{
+    text-align: center;
+}
+
+footer a,nav a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer a,nav a,nav label{
+    color: var(--black);
+}
+
+body{
+    line-height: 1;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+blockquote,q{
+    quotes: none;
+}
+
+blockquote:after,blockquote:before,q:after,q:before{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root{
+    --yellow: #f6d64a;
+    --teal :#55bcd5;
+    --purple: #9b26b0;
+    --blue: #499bd2;
+    --dark-gray: #222222;
+    --light-gray: #eaeaea;
+    --white: #ffffff;
+    --black :#000000;
+}
+
+#skip{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: var(--white);
+    padding: .5rem;
+    z-index: 100;
+}
+
+#skip:focus{
+    top: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2,h3{
+    font-family: Molle,cursive;
+}
+
+a,button,form,h4,nav,p,q,small{
+    font-family: Montserrat,sans-serif;
+}
+
+header{
+    background: linear-gradient(-180deg,var(--teal),var(--white));
+}
+
+#logo{
+    width: 125px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2,h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+header p{
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+#toggle,nav h2{
+    display: none;
+}
+
+nav label{
+    padding: .7rem 0;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+#intro h2,header h1,header p{
+    padding: 0 1rem;
+}
+
+#toggle:checked~ul{
+    transform: scaleY(1);
+}
+
+#toggle:checked~label{
+    background: var(--black);
+    color: var(--white);
+}
+
 
 
 @media (min-width:500px){
